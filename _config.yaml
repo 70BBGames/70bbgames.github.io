@@ -1,0 +1,18 @@
+title: 70BBlog
+email: 70bbgames@gmail.com
+description: Welcome to the 7BBlog!
+baseurl: ""
+url: "https://70bbgames.github.io" 
+
+theme: jekyll-theme-midnight
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Optional: social links (used by some themes or SEO)
+social:
+  github: 70bbgames

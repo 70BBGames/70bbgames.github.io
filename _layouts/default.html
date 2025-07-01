@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>{{ page.title }}</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 1rem;
+        font-family: -apple-system, system-ui, sans-serif;
+        background: #111;
+        color: #eee;
+      }
+      a { color: #4aa3df; }
+
+      /* Navbar */
+      .header {
+          background-color: black;  /* Set the navbar background to black */
+          color: #fff;
+          padding: 1rem 0;
+          position: fixed;  /* Keep navbar fixed at the top */
+          top: 0;
+          width: 100%;
+          z-index: 1000;
+          transition: transform 0.3s ease;  /* Add a smooth transition for the hide/show effect */
+      }
+
+      .header nav ul {
+          list-style-type: none;
+          display: flex;
+          justify-content: center;
+      }
+
+      .header nav ul li {
+          margin: 0 20px;
+      }
+
+      .header nav ul li a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+          font-size: 1.1rem;
+      }
+
+      
+      @media (max-width: 768px) {
+        body {
+          padding-top: 60px; /* mobile headers often wrap and are taller */
+        }
+
+        .header nav ul {
+          flex-wrap: wrap;
+          padding: 0 1rem;
+        }
+
+        .header nav ul li {
+          margin: 0.5rem;
+        }
+
+        .header nav ul li a {
+          font-size: 0.95rem;
+        }
+      }
+    </style>
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <hr />
+
+    <div class="wrapper">   
+      <section>
+        <div id="title">
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <p>{{ site.tagline | default: site.description | default: site.github.project_tagline }}</p>
+          <hr>
+        </div>
+
+        {{ content }}
+
+      </section>
+
+    </div>
+  </body>
+</html>

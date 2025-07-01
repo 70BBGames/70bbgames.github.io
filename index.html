@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="70BB Apps and Games">
+    <meta name="author" content="70BB Games">
+    <title>70BB Studios</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>        
+        /* Parallax Section - Home */
+        #home {
+            background: url('assets/images/hm/home-image.png') center center no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Parallax Section - About */
+        #about {
+            background: url('assets/images/hm/about-image.png') center center / cover no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Parallax Section - Services */
+        #games {
+            background: url('assets/images/hm/services-image.png') center center / cover no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Parallax Section - Contact */
+        #contact {
+            background: url('assets/images/hm/contact-image.png') center center / cover no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+        section.parallax {
+            background-attachment: scroll; /* Prevent jitter on mobile */
+        }
+    }        
+    </style>
+
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="blog">News & Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Parallax Section (Home) -->
+    <section id="home" class="parallax">
+        <div class="parallax-content">
+            <h1>Welcome to 70BB Studios</h1>
+            <p>Home to Slumber Party and soon more!</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="parallax">
+        <div class="parallax-content">
+            <h2>About Us</h2>
+            <p>We are 2 man team that just want to make cool games. <br /> 
+                Our statement is to make games that are fun and affordable!</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="games" class="parallax">
+        <div class="parallax-content">
+            <h2>Our Games</h2>
+            <p>We are an aspiring game studio. Hopefully to continue the path on making games! <br /> Visit our page on Slumber Party to see our coming soons!</p>
+            <br /> <br/>
+            
+            <a href="slumberparty"><img src="assets/images/logo.png" /></a>
+            
+            <br /> <br/>
+            <h2>More Games Planned...</h2>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="parallax">
+        <div class="parallax-content">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:70bbgames@gmail.com">70bbgames@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <button id="scrollToTopBtn" class="scroll-to-top">^</button>
+
+        <div class="social-media">
+            <a href="#" target="_blank" aria-label="Discord">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="Tiktok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+
+        <p>&copy; 2025 70BBGames.</p>
+    </footer>   
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>

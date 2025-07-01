@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="70BB Apps and Games">
+    <meta name="author" content="70BB Games">
+    <title>70BB Studios - Slumber Party</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>        
+        /* Parallax Section - Home */
+        #home {
+            background: url('assets/images/sb/home-image.png') center center no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Parallax Section - About */
+        #features {
+            background: url('assets/images/sb/about-image.png') center center / cover no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Parallax Section - Services */
+        #comingsoon {
+            background: url('assets/images/sb/services-image.png') center center / cover no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Parallax Section - Contact */
+        #contact {
+            background: url('assets/images/sb/contact-image.png') center center / cover no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+        section.parallax {
+            background-attachment: scroll; /* Prevent jitter on mobile */
+        }
+    }        
+    </style>
+
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#comingsoon">Coming Soon</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="blog">News & Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Parallax Section (Home) -->
+    <section id="home" class="parallax">
+        <div class="parallax-content">
+            <a href="#"><img src="assets/images/logo.png" /></a>
+            <br /> <br />
+
+            <h1>Dive into a slumber party!</h1>
+            <p>They say not to watch scary movies before bed...</p>               
+            <ul>
+                <li>Get up to 3 friends and work together survive!.</li>
+                <li>Need a challenge? Switch on versus mode and make it everyone for themselves!</li>
+                <li>Can you (with or without your friends) make it out?.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="features" class="parallax">
+        <div class="parallax-content">
+            <h1>Features</h1>
+            <p>Overcome your nightmares! Sometimes it is easier with a friend.</p>          
+            <ul >
+                <li>Endless dreams! How high of a score can your team get?</li>
+                <li>Collect coins to purchase a refreshing drink or test your luck at the Fortune Machine!</li>
+                <li>Always keep a hammer with you, to break you (or your friends) out of those dirty cages.</li>
+                <li>Had your fill? Head to the DreamBox and press the Red Button to return, or you can find other ways...</li>
+                <li>Turn your "money" to Kevin at the store and get yourself an outfit, or maybe even a little friend!</li>
+                <li>
+            <h2>Versus Mode</h2>
+            <p>Feeling competitive? Switch on Versus Mode with 2 or more players to get a challenge going! </p>          
+            <ul >
+                <li>Individual Scoring per player, who can get the highest score?</li>
+                <li>Is sharing really caring, in life or death?</li>
+                <li>You earn more from being the best!</li>
+                <li>Reward ranking: first gets the most and the last gets nil!</li>
+            </ul></li>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="comingsoon" class="parallax">
+        <div class="parallax-content">
+            <h2>Coming Soon</h2>
+            <p>We have plans to keep this nightmare party going! We have lots of plans to come.</p>          
+            <ul >
+                <li>MORE COSMETICS! Cause why not?</li>
+                <li>New Nightmares & Monsters!</li>
+                <li>New Items and Machines!</li>
+                <li>New Player Models!</li>
+                <li>Red Button Events?</li>
+                <li>Xbox Port</LI>
+            </ul>
+
+            <p>Want to be a part of the discussions and get notifications about our timeline? Join our Discord.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="parallax">
+        <div class="parallax-content">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:70bbgames@gmail.com">70bbgames@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <button id="scrollToTopBtn" class="scroll-to-top">^</button>
+
+        <div class="social-media">
+            <a href="#" target="_blank" aria-label="Discord">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="Tiktok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 70BBGames.</p>
+    </footer>   
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>

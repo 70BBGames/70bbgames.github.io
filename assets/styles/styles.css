@@ -1,0 +1,242 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'CrayonLibre';
+    src: url('/fonts/CrayonLibre.ttf') format('truetype');
+}
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-position: outside;
+    padding-left: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+}
+
+ul li {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #d6cf66;
+}
+
+/* Basic layout */
+body {
+    font-family: 'CrayonLibre', sans-serif;
+    line-height: 1.6;
+    background-color: black;
+    color: #fff;
+}
+
+/* Navbar */
+header {
+    background-color: black;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+header.hidden {
+    transform: translateY(-100%);
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Parallax Content */
+.parallax-content {
+    text-align: center;
+    padding: 2rem;
+}
+
+.parallax-content img {
+    margin-bottom: -100px;
+    margin-left: -100px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Background fix — handled in HTML inline or by ID/class rules */
+section.parallax {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile parallax fix */
+@media (max-width: 768px) {
+    section.parallax {
+        background-attachment: scroll;
+        padding: 2rem 1rem;
+    }
+}
+
+/* Text elements */
+li {
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+}
+
+.parallax h1,
+.parallax p,
+section h2,
+section p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.parallax h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.parallax p {
+    font-size: 1.5rem;
+}
+
+/* Sections */
+section {
+    padding: 4rem 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+section p {
+    font-size: 1.2rem;
+}
+
+section:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Scroll-to-top */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #33333371;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.scroll-to-top:hover {
+    background-color: #242222b4;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    z-index: 999;
+}
+
+/* Social Media Icons in Footer */
+.social-media {
+    margin: 1rem 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #d6cf66;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+        overflow-x: hidden;
+    }
+
+    .parallax h1 {
+        font-size: 2rem;
+    }
+
+    .parallax p {
+        font-size: 1.2rem;
+    }
+
+    header nav ul {
+        flex-direction: row;  /* Or column if you prefer stacking */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0 1rem;
+    }
+
+    header nav ul li {
+        margin: 0.2rem 0.5rem;
+    }
+
+    header nav ul li a {
+        font-size: 0.9rem;
+        padding: 0.3rem;
+    }
+
+    .parallax-content img {
+        margin: 0 auto;
+        max-width: 90%;
+        height: auto;
+        display: block;
+    }
+}

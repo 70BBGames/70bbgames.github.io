@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blog
+---
+
+<div style="margin: 0; padding: 0;">
+  {% for post in site.posts %}
+    <article style="margin-bottom: 4em; text-align: center;">
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; align-items: center;">
+        <h1 style="margin: 0;"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <p style="margin: 0;"><strong>{{ site.author }}</strong> – {{ post.date | date: "%B %d, %Y" }}</p>
+      </div>
+
+      {% if post.image %}
+        <img src="{{ post.image }}" alt="Featured image" style="max-width: 100%; margin: 1em 0;">
+      {% endif %}
+
+      <p>{{ post.content | strip_html | truncate: 100 }}</p>
+      <a href="{{ post.url }}">Read more →</a>
+    </article>
+  {% endfor %}
+</div>
